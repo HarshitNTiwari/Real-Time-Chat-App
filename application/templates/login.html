@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h3>{{ message }}</h3>
+<form action='/login' method="POST" class="col s12">
+	<div class="form-group">
+        <label for="username">Enter Username</label>
+        <input type="text"  name="username" class="form-control" id="username" placeholder="Joey" required>
+        
+        <label for="room">Enter Password:</label>
+        <input type="password"  name="password" class="form-control" id="password" placeholder="1234" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enter chat</button>
+</form>
+
+
+{% endblock %}
