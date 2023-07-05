@@ -8,6 +8,7 @@
     "start": "node server",
     "dev": "nodemon server"
   },
+  "proxy": "http://localhost:3000",
   "author": "Harshit Tiwari",
   "license": "MIT",
   "dependencies": {

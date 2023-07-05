@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link 
-            rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
-            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
-            crossorigin="anonymous" 
-            referrerpolicy="no-referrer" 
-        />
-		<link rel="stylesheet" href="css/style.css" />
-		<title>Fleet - Fast Chat Application</title>
-	</head>
-	<body>
-		<div class="join-container">
-			<header class="join-header">
-				<h1><i class="fa-solid fa-messages"></i> Fleet  </h1>
-                <h3>Create an account</h3>
-			</header>
-			<main class="join-main">
-				<form action="/api/v1/auth/register" method=post>
-					<div class="form-control">
-						<label for="email">Email</label>
-						<input
-							type="text"
-							name="email"
-							id="email"
-							placeholder="Enter email..."
-							required
-						/>
-					</div>
-                    <div class="form-control">
-						<label for="password">Password</label>
-						<input
-							type="text"
-							name="password"
-							id="password    "
-							placeholder="Enter password..."
-							required
-						/>
-					</div>
-                    <p>Already have an account? <a href="/login.html">Login here</a></p>
-					<button type="submit" class="btn">Register</button>
-				</form>
-			</main>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Fleet - Fast Chat Application</title>
+  </head>
+  <body>
+    <div class="join-container">
+      <header class="join-header">
+        <h1><i class="fa-solid fa-messages"></i> Fleet</h1>
+        <h3>Create an account</h3>
+      </header>
+      <main class="join-main">
+        <form id="register-form" action="/api/v1/auth/register" method="post">
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter email..."
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input
+              type="text"
+              name="password"
+              id="password    "
+              placeholder="Enter password..."
+              required
+            />
+          </div>
+          <p>Already have an account? <a href="/login.html">Login here</a></p>
+          <button type="submit" class="btn">Register</button>
+        </form>
+      </main>
+    </div>
+  </body>
 </html>
